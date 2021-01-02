@@ -57,7 +57,7 @@ fi
   # We expect nginx to run in foreground.
   # We also expect a socket to be at /tmp/nginx.socket.
   echo 'buildpack=nginx at=nginx-start'
-  bin/nginx -p . -c nginx/config/nginx.conf.erb
+  bin/nginx -p . -c nginx/config/nginx.conf
   echo 'nginx' >$psmgr
 ) &
 
